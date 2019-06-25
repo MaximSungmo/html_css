@@ -1,5 +1,3 @@
-# html_css
-
 HTML
 
 
@@ -47,7 +45,63 @@ ID > Class > 태그
 
 CSS - 박스모델
 
+1. 마진과 패딩
+
+- ```css
+  /*방법1.  4개의 방향을 각각 지정*/
+         margin-top:10px;
+         margin-right:20px;
+         margin-bottom:30px;
+         margin-left:40px;
+  /*방법2. 각 방향으로 한꺼번에 지정하는 단축형*/
+         margin: 10px 20px 30px 40px;   
+  ```
+
+- ```css
+  /*width 와 height 지정*/
+  width: 속성값 
+  height: 속성값
+  /*width 와 height의 속성값은 %(퍼센트) 또는 px(픽셀 사용)최대(최소) width 와  최대(최소) height 지정*/
+  max-width: 속성값
+  min-width: 속성값      
+  max-height: 속성값 
+  min-height: 속성값 
+  ```
+
+2. 백그라운드 이미지
+
+- ```css
+  background-: 속성값  
+  속성값 리스트
+  color:  색상을 지정,
+  image:  배경 이미지 지정 URL(‘……’)
+  repeat: 배경이미지의 반복  repeat, no-repeat, repeat-x, repeat-y
+  position:  백그라운드 이미지의 위치  x,y 축을 기준으로  픽셀  값으로 지정
+  ```
+
+3. 박스모델 
+
+- ```css
+  float: right(오른쪽), left(왼쪽), none(없음)
+  ```
 
 
 
+CSS - 글꼴 및 텍스트의 이해
+
+1. 글꼴 사이즈 지정
+
+```CSS
+font-size: 12px  과  font-size : 75% 는 같다.
+% 보다는 em를 많이 쓴다.
+font-size: 12px  과  font-size : 0.75em 은 같다.
+```
+
+2. 텍스트 처리방법
+
+- ```CSS
+  line-height: 속성값  ( px, %, em )
+  ```
+
+  
 

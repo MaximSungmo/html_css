@@ -49,12 +49,12 @@ CSS - 박스모델
 
 - ```css
   /*방법1.  4개의 방향을 각각 지정*/
-         margin-top:10px;
-         margin-right:20px;
-         margin-bottom:30px;
-         margin-left:40px;
+  margin-top:10px;
+  margin-right:20px;
+  margin-bottom:30px;
+  margin-left:40px;
   /*방법2. 각 방향으로 한꺼번에 지정하는 단축형*/
-         margin: 10px 20px 30px 40px;   
+  margin: 10px 20px 30px 40px;   
   ```
 
 - ```css
@@ -99,9 +99,48 @@ font-size: 12px  과  font-size : 0.75em 은 같다.
 
 2. 텍스트 처리방법
 
-- ```CSS
-  line-height: 속성값  ( px, %, em )
-  ```
+```css
+/** 글자 위아래 간격  **/
+line-height: 속성값  ( px, %, em )
 
-  
+/** 밑줄, 취소선, 윗줄**/
+text-decoration: underline, overline, line-through
+
+/** 텍스트 정렬 **/
+text-align:justify, right, left, center
+
+/** 첫 문장 들여쓰기**/
+text-indent:15px;	
+
+/** cm2, m2, km2 **/
+vertical-align:super, middle, auto, baseline, central, top, bottom;
+
+/** 영문 첫 글자 대문자 **/
+text-transform: capitalize;
+
+/** 영문 모든 글자 대문자 / 소문자 **/
+text-transform: uppercase; lowercase;
+
+/** 글자 사이 간격 **/
+letter-spacing:20px;
+
+/** letter-spacing으로 처리 힘들 때, 즉, 정해진 폼에 한줄로 입력이 어려운 경우 **/
+overflow: hidden;
+text-overflow: ellipsis;
+white-space:nowrap;
+- 영문자는 ABC 로 시작됩니다.
+- 영문자는 AB....
+
+/** 단어 사이의 간격 조절**/
+word-spacing:10px;
+```
+
+3. 테이블 처리 방법 
+
+```css
+ul, ol{ list-style-type:lower-roman; decimal, disc, circle }
+
+
+
+```
 
